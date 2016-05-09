@@ -13,10 +13,10 @@ Lastly the program accepts input of a URL from the command line. This can be use
 
 ## Installation
 
-requests package is required: I have tested this against 2.10.0
+requests and feedparser packages are required: I have tested this against requests (2.10.0) and feedparser (5.1.3)
 
 ```
-sudo pip3 install requests
+sudo pip3 install requests feedparser
 
 
 clone the repository
