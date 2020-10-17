@@ -56,7 +56,7 @@ def __init__():
 			print(access_req.headers['X-Error'])#gives error reason
 			print("Terminating")
 			sys.exit(1)
-		pickle_data['access token'] = access_req.text.strip('access_token=')
+		pickle_data['access token'] = access_req.text.strip('access_token=').split('&')[0]
 
 		#save the tokens
 		with open(pickle_file, 'wb') as f:
